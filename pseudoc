@@ -1,0 +1,23 @@
+def swap(myArray: Array[String], left: Int, right: Int): Array[String] = {
+	
+	var temp = ARRY(left)
+	ARRY(left) = ARRY(right)
+	ARRY(right) = temp
+	return ARRY
+}
+
+def bubbleSort(myArray: Array[String]): Array[String] =  {
+	
+	var newarray = myArray
+	
+	for (go through array) {
+		for (go through array) { // I go through the array twice because I can't be bothered to write in code to test if it's fully sorted, and this makes sure it goes through enough times
+			
+			if (array(i) is larger than array(i+1)) {
+			
+				swap(array, i, i+1)
+			}
+		}
+	}
+	return array
+}
