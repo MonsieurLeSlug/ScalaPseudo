@@ -1,0 +1,20 @@
+def convert(data : String):Int = {
+	
+	var new_array = data converted from string to array of characters
+	var int_array = a new array to store the previous array converted to ints
+	var output = 0 // the total we'll be outputting at the end
+	
+	for (go through the new_array) {
+		if (we find 'I') then int_array(current place) = 1
+		etc. for all the letters
+	}
+	
+	for (go through the int_array) {
+		if (current place in the array is smaller than the next place in the array) {
+			take int_array(current place) away from output
+		} else {
+			add it instead
+		}
+	}
+	return output
+}
