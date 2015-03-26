@@ -1,0 +1,33 @@
+def encode(data : List[Int]) : List[Any] = {
+	
+	if (data is empty) return data
+	var outputlist = new empty list
+	var compare // variable we'll be using for comparing
+	var inputlist = data
+	var counter // the number of times the current number is in a row
+	var tuple = new list of 1 length with our counter and compare value in (in 1 slot)
+	compare = the head of our input list
+	chop off the list's head since we've already copied it into our compare variable
+	set counter to 1, since we'll always have a minimum of 1 number in a row
+	
+	while (our list is empty) {
+		
+		if (the current head of list = our compare value) {
+			
+			add 1 to counter
+			
+		} otherwise (there are no more in a a row){
+			
+			tuple = a list with counter and compare in again
+			output list = itself = tuple
+			reset counter to 1
+			compare = the current head of input list
+		}
+		
+		always remove the head of list
+	}
+	
+	make tuple again, same as before
+	add it to output list again
+	return it!
+}
